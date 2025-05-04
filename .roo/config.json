@@ -1,0 +1,157 @@
+{
+  "version": "1.0.0",
+  "name": "Roo Multi-Agent Framework",
+  "description": "A Structured, Transparent, and Well-Documented AI Team that Delegates Its Own Tasks",
+  "framework": "SPARC",
+  "projectInfo": {
+    "documentation": "https://github.com/Mnehmos/The-Ultimate-Roo-Code-Hack-Building-a-Structured-Transparent-and-Well-Documented-AI-Team"
+  },
+  "modes": {
+    "orchestrator": {
+      "slug": "orchestrator",
+      "name": "🪃 Orchestrator",
+      "description": "Workflow Orchestration Specialist",
+      "role": "Task decomposition, assignment, and verification",
+      "allowed_file_patterns": [".*"],
+      "cognitive_processes": [
+        "Strategic Planning",
+        "Problem-Solving",
+        "Complex Decision-Making"
+      ],
+      "rules_path": ".roo/rules-orchestrator/rules.md"
+    },
+    "code": {
+      "slug": "code",
+      "name": "💻 Code",
+      "description": "Software Implementation Specialist",
+      "role": "Write, refactor, and manage code in alignment with repo architecture",
+      "allowed_file_patterns": ["\\.js$", "\\.ts$", "\\.py$", "\\.html$", "\\.css$", "\\.json$", "\\.yaml$", "\\.yml$"],
+      "cognitive_processes": [
+        "Problem-Solving",
+        "Operational Optimization",
+        "Synthesizing Complexity"
+      ],
+      "rules_path": ".roo/rules-code/rules.md"
+    },
+    "architect": {
+      "slug": "architect",
+      "name": "🏛️ Architect",
+      "description": "Systems Architecture Specialist",
+      "role": "Design complex technical systems and organizational structures",
+      "allowed_file_patterns": ["\\.md$"],
+      "cognitive_processes": [
+        "Strategic Planning",
+        "Synthesizing Complexity",
+        "Complex Decision-Making"
+      ],
+      "rules_path": ".roo/rules-architect/rules.md"
+    },
+    "ask": {
+      "slug": "ask",
+      "name": "❓ Ask",
+      "description": "Information Discovery Specialist",
+      "role": "Research, analyze, and synthesize information",
+      "allowed_file_patterns": [".*"],
+      "cognitive_processes": [
+        "Evidence Triangulation",
+        "Fact-Checking",
+        "Critical Review"
+      ],
+      "rules_path": ".roo/rules-ask/rules.md"
+    },
+    "debug": {
+      "slug": "debug",
+      "name": "🪲 Debug",
+      "description": "Technical Diagnostics Specialist",
+      "role": "Identify and resolve technical issues",
+      "allowed_file_patterns": [".*"],
+      "cognitive_processes": [
+        "Root Cause Analysis",
+        "Hypothesis Testing",
+        "Problem-Solving"
+      ],
+      "rules_path": ".roo/rules-debug/rules.md"
+    },
+    "memory": {
+      "slug": "memory",
+      "name": "💾 Memory",
+      "description": "Knowledge Management Specialist",
+      "role": "Store, organize, and retrieve project knowledge",
+      "allowed_file_patterns": ["\\.roo/memory/.*"],
+      "cognitive_processes": [
+        "Pattern Extraction",
+        "Synthesizing Complexity",
+        "Adaptive Learning"
+      ],
+      "rules_path": ".roo/rules-memory/rules.md",
+      "storage_path": ".roo/memory"
+    },
+    "deep-research-agent": {
+      "slug": "deep-research-agent",
+      "name": "🔍 Deep Research",
+      "description": "Deep Information Discovery and Analysis Specialist",
+      "role": "Conduct structured research with proper citation and synthesis",
+      "allowed_file_patterns": ["\\.md$", "research/.*"],
+      "cognitive_processes": [
+        "Evidence Triangulation",
+        "Critical Review",
+        "Insight Discovery",
+        "Knowledge Synthesis"
+      ],
+      "rules_path": ".roo/rules-deep-research-agent/rules.md"
+    }
+  },
+  "boomerang": {
+    "state_file": ".roo/boomerang-state.json",
+    "enabled": true,
+    "log_directory": ".roo/logs"
+  },
+  "documentation": {
+    "templates_directory": "templates",
+    "standard_sections": [
+      "Overview",
+      "Core Principles",
+      "Implementation Guidelines",
+      "Meta-Commentary"
+    ],
+    "file_header_template": {
+      "title": "[DOCUMENT_TITLE]",
+      "task_id": "[ORIGINATING_TASK]",
+      "date": "[CREATION_DATE]",
+      "last_updated": "[UPDATE_DATE]",
+      "status": "[DRAFT|REVIEW|FINAL]",
+      "owner": "[RESPONSIBLE_MODE]"
+    }
+  },
+  "memory": {
+    "enabled": true,
+    "storage_structure": {
+      "projects": ".roo/memory/projects",
+      "knowledge": ".roo/memory/knowledge",
+      "context": ".roo/memory/context",
+      "index": ".roo/memory/index"
+    },
+    "index_files": {
+      "artifacts": ".roo/memory/index/artifacts-index.json",
+      "timeline": ".roo/memory/index/timeline-index.json",
+      "topics": ".roo/memory/index/topic-index.json",
+      "relationships": ".roo/memory/index/relationship-graph.json"
+    }
+  },
+  "cognitive_processes": {
+    "primitives": [
+      "Observe",
+      "Define",
+      "Distinguish",
+      "Sequence",
+      "Compare",
+      "Infer",
+      "Reflect",
+      "Ask",
+      "Synthesize",
+      "Decide",
+      "Adapt"
+    ],
+    "processes_file": "framework/cognitive-processes.md"
+  }
+}

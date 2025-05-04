@@ -1,0 +1,43 @@
+{
+  "tasks": [
+    {
+      "task_id": "ARCH-001",
+      "title": "High-Level Architecture Design",
+      "description": "Create a comprehensive architecture design for the UltimateDesktopCompanion system",
+      "assigned_to": "architect",
+      "status": "completed",
+      "created_at": "2025-05-04T13:58:00Z",
+      "updated_at": "2025-05-04T14:10:00Z",
+      "completed_at": "2025-05-04T14:10:00Z",
+      "dependencies": [],
+      "priority": "high"
+    },
+    {
+      "task_id": "CORE-001",
+      "title": "Core System Implementation",
+      "description": "Implement the core system components of the UltimateDesktopCompanion",
+      "assigned_to": "code",
+      "status": "pending",
+      "created_at": "2025-05-04T14:13:00Z",
+      "updated_at": "2025-05-04T14:13:00Z",
+      "dependencies": ["ARCH-001"],
+      "priority": "high"
+    }
+  ],
+  "project_status": "in_progress",
+  "last_updated": "2025-05-04T14:13:00Z",
+  "active_tasks": {
+    "CORE-001": {
+      "mode": "code",
+      "status": "pending"
+    }
+  },
+  "completed_tasks": {
+    "ARCH-001": {
+      "mode": "architect",
+      "status": "completed",
+      "completed_at": "2025-05-04T14:10:00Z"
+    }
+  },
+  "task_counter": 2
+}

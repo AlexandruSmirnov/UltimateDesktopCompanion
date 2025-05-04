@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UltimateDesktopCompanion Core Documentation</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1, h2, h3 {
+      color: #0066cc;
+    }
+    
+    code, pre {
+      background-color: #f5f5f5;
+      border-radius: 3px;
+      padding: 2px 5px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>UltimateDesktopCompanion Core System</h1>
+  
+  <h2>Overview</h2>
+  <p>The core system provides the foundation for the UltimateDesktopCompanion, including:</p>
+  <ul>
+    <li>Event-driven communication between components</li>
+    <li>Resource management and optimization</li>
+    <li>WebSocket server for real-time communication</li>
+    <li>Plugin system for extensibility</li>
+    <li>Service orchestration for component lifecycle management</li>
+  </ul>
+  
+  <h2>Architecture</h2>
+  <p>The core system follows a modular monolith architecture with clear component boundaries. The main components are:</p>
+  <ol>
+    <li><strong>EventBus</strong>: Central event bus for asynchronous communication between components</li>
+    <li><strong>ServiceOrchestrator</strong>: Coordinates the startup, shutdown, and operation of all components</li>
+    <li><strong>ResourceManager</strong>: Monitors and controls resource usage to maintain performance targets</li>
+    <li><strong>WebSocketServer</strong>: Provides real-time communication with the UI</li>
+    <li><strong>PluginManager</strong>: Loads, validates, and manages third-party plugins</li>
+  </ol>
+</body>
+</html>

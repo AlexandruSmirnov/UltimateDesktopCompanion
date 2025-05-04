@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UltimateDesktopCompanion</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: 60px 1fr 30px;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      height: 100vh;
+    }
+    
+    header {
+      grid-area: header;
+      background-color: #007bff;
+      color: white;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    
+    .sidebar {
+      grid-area: sidebar;
+      background-color: white;
+      border-right: 1px solid #dee2e6;
+      padding: 20px;
+    }
+    
+    main {
+      grid-area: main;
+      padding: 20px;
+      overflow: auto;
+    }
+    
+    footer {
+      grid-area: footer;
+      background-color: #6c757d;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>UltimateDesktopCompanion</h1>
+      <div id="status-indicator">Connecting...</div>
+    </header>
+    
+    <div class="sidebar">
+      <nav>
+        <div class="nav-item active">Dashboard</div>
+        <div class="nav-item">System Monitoring</div>
+        <div class="nav-item">Media Control</div>
+        <div class="nav-item">Settings</div>
+      </nav>
+    </div>
+    
+    <main id="main-content">
+      <div id="dashboard-page">
+        <h2>Dashboard</h2>
+        <p>Welcome to UltimateDesktopCompanion!</p>
+        <p>This is a placeholder dashboard. The actual implementation will include widgets for system monitoring and media control.</p>
+      </div>
+    </main>
+    
+    <footer>
+      <div>UltimateDesktopCompanion v0.1.0</div>
+    </footer>
+  </div>
+</body>
+</html>
